@@ -1,0 +1,29 @@
+{
+    "mod_policy":"Admins",
+    "policy":{
+        "type":1,
+        "value":{
+            "identities":[
+                {
+                    "principal":{
+                        "msp_identifier":"{AdminOrgMSP}",
+                        "role":"ADMIN"
+                    },
+                    "principal_classification":"ROLE"
+                }
+            ],
+            "rule":{
+                "n_out_of":{
+                    "n":1,
+                    "rules":[
+                        {
+                            "signed_by":0
+                        }
+                    ]
+                }
+            },
+            "version":0
+        }
+    },
+    "version":"0"
+}
